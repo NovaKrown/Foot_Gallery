@@ -111,14 +111,20 @@ body {
   /* width: 100vw; */
   /* height: 1200vh; */
   /* background-color: red; */
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
 }
 
 main {
-  /* padding-top: 10vh; */
+  padding-top: 10vh;
   width: 100vw;
-  padding-bottom: 500px;
+  /* padding-bottom: 500px; */
   background: linear-gradient(#0632a1, #4b6fcb);
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
 }
 
 .navbar {
@@ -165,14 +171,16 @@ section {
   /* margin-top: 500px; */
   /* background-color: aqua; */
   border: 2px solid black;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   padding: 5vw;
+  scroll-snap-align: start;
+  /* scroll-margin-top: 10vh; */
 }
 
 img {
-  max-width: 500px;
-  width: 500px;
+  max-width: 50vw;
+  /* width: 90vw; */
   border: 1px solid black;
 }
 
@@ -182,4 +190,16 @@ figure {
 
 figcaption {
   font-size: 0.5em;
+}
+
+.y.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
+}
+
+/* main > section {
+  scroll-snap-align: center;
+} */
+
+.always-stop > section {
+  scroll-snap-stop: always;
 }
