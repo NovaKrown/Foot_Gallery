@@ -107,13 +107,6 @@ html {
   color: white;
 }
 
-body {
-  /* width: 100vw; */
-  /* height: 1200vh; */
-  /* background-color: red; */
-  /* padding-top: 10vh; */
-}
-
 main {
   padding-top: 10vh;
   width: 100vw;
@@ -192,9 +185,12 @@ h2 {
 }
 
 img {
-  max-width: 100%;
-  max-height: 90%;
-  height: 90%;
+  /* max-width: 90%; */
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  max-height: 95%;
+
   /* width: 90vw; */
   /* border: 1px solid black; */
 }
@@ -213,16 +209,4 @@ figure {
 figcaption {
   text-align: center;
   font-size: 0.5em;
-}
-
-.y.mandatory-scroll-snapping {
-  scroll-snap-type: y mandatory;
-}
-
-/* main > section {
-  scroll-snap-align: center;
-} */
-
-.always-stop > section {
-  scroll-snap-stop: always;
 }
